@@ -4,12 +4,31 @@
 
         @include('Admin.admin_head.admin_sidebar')
 
+        <style>
+            .createCourse {
+                /* border: 1px solid gray; */
+                background-color: lightgoldenrodyellow;
+                width: 55%;                
+                margin: 1rem auto;
+            }
+            .createCourseDiv{
+                width: 90%; 
+                margin:5% auto;
+            }
+
+            .heading_cc {
+                text-align: center;
+                /* margin: 0 0 1.5rem; */
+                background-color: lightcoral;
+                padding: 1rem;
+            }
+        </style>
 
 
-
-
-        <div class="border-one">
+        <div class="createCourse">
             <h3 class="heading_cc">{{ $title }} </h3>
+            <div class="createCourseDiv">      
+
             <form action="{{ $url }}" method="post" enctype="multipart/form-data">
                 @csrf
                 <label class="label_cc" for="">Course Name(Index)</label><br>
@@ -115,7 +134,7 @@
                     value="{{ $courseindexinsert ? $courseindexinsert->tenth_heading : '' }}"><br>
                 <label class="label_cc" for="">Tenth Paragraph</label><br>
                 <input type="text" class="input-cc" name="tenth_paragraph" id=""
-                    value="{{ $courseindexinsert ? $courseindexinsert->tenth_paragraph : '' }}"><br>
+                    value="{{ $courseindexinsert ? $courseindexinsert->tenth_paragraph : '' }}"><br><br>
 
                 <button type="submit" class="btn_cc"> Add </button>
             </form>

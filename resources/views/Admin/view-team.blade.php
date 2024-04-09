@@ -1,92 +1,111 @@
 @extends('Admin.admin_head.common_section')
 @section('main-content')
-<div class="details-box">
+    <div class="flexing-display">
+        @include('Admin.admin_head.admin_sidebar')
+        <style>
+            .container_luid {
+                width: 45%;
+                /* border:1px solid gray; */
+                margin: 1rem auto;
+                padding: 0.8rem;
+                box-shadow: 0px 0px 5px gray;
+            }
 
-    @include('Admin.admin_head.admin_sidebar')
+            .flexing-display {
+                display: flex;
+                width: 100%;
+                padding: 2%;
+            }
+
+            .seventy-percent {
+                width: 75%;
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+            .viewTeamDive {
+                color: black;
+            }
+
+            .btnEditDeletestyle {
+                /* border: 1px solid green; */
+                width: 100%;
+                display: flex;
+            }
+
+            .btnEditDeletestyle a {
+                width: 47%;
+                margin: auto;
+                display: flex;
+            }
+
+            .btnEditDeletestyle button {
+                width: 100%;
+                border: none;
+                background-color: rgb(50, 50, 211);
+                padding: 1rem;
+                color: white;
+            }
+            @media(max-width:768px){
+                .flexing-display{
+                    display: block;
+                }
+                .seventy-percent {
+                width: 100%;
+                display: block;
+            }
+            .container_luid {
+                width: 87%;}
+            }
+        </style>
+        <div class="seventy-percent">
+
+            @foreach ($teamMembers as $teammeber)
+                <main class="container_luid">
+                    <div class=" ">
+
+                        <div class="">
+                            <?php $member_img = str_replace('public/', 'storage/', $teammeber->member_image); ?>
+                            <img class="img-fluid" src="{{ asset($member_img) }}" alt="image" width="40%">
+                        </div>
 
 
-    <div>
-
-    @foreach ($teamMembers as $teammeber)
-        <main class="container-fluid p-3 border">
-            <div class="section-main ">
-
-                <div class="section-one">
-                    <?php $member_img = str_replace('public/', 'storage/', $teammeber->member_image); ?>
-                    <img class="img-fluid" src="{{ asset($member_img) }}" alt="image" width="40%">
-                </div>
+                        <div class="pt-4">
+                            <h6 class="headings">{{ $teammeber->member_name }}</h6>
+                            <p class="viewTeamDive">{{ $teammeber->member_title }}</p>
 
 
-                <div class="section-two pt-4">
-                    <h6 class="headings">{{ $teammeber->member_name }}</h6>
-                    <i>{{ $teammeber->member_title }}</i>
+                            <h6 class="headings">Team Details</h6>
+                            <p class="viewTeamDive">{{ $teammeber->member_since }}</p>
+                        </div>
+
+                        <div class="pt-4">
+                            <h6 class="headings">Personal Information</h6>
+                                <b>Phone:</b>
+                                <p class="viewTeamDive">{{ $teammeber->member_contact }}</p>
+                                <b>Email:</b>
+                                <p class="viewTeamDive">{{ $teammeber->member_email }}</p>
 
 
-                    <h6 class="headings">Team Details</h6>
-                    <p>{{ $teammeber->member_since }}</p>
-                </div>
+                                <b>Websites:</b>
+                                <p class="viewTeamDive">{{ $teammeber->member_website }}</p>
 
-                <div class="section-three  pt-4">
-                    <h6 class="headings">Personal Information</h6>
-                    <div class="inline-block">
-                        <b>Phone:</b>
-                        <p>{{ $teammeber->member_contact }}</p>
+
+                                <b>Fax:</b>
+                                <p class="viewTeamDive">{{ $teammeber->member_fax }}</p>
+                                <b>Skills:</b>
+                                <p class="viewTeamDive">{{ $teammeber->member_skill }}</p>
+                        </div>
+                        <div class="btnEditDeletestyle">
+                            <a href="{{ url('/Admin/edit-team') }}/{{ $teammeber->id }}">
+                                <button>Edit</button></a>
+                            <a href="{{ url('/Admin/delete-team') }}/{{ $teammeber->id }}">
+                                <button>Delete</button></a>
+                        </div>
                     </div>
-                    <div class="inline-block">
-                        <b>Email:</b>
-                        <p>{{ $teammeber->member_email }}</p>
-                    </div>
 
-
-                    <div class="inline-block">
-                        <b>Websites:</b>
-                        <p>{{ $teammeber->member_website }}</p>
-                    </div>
-
-
-                    <div class="inline-block">
-
-                        <b>Fax:</b>
-                        <p>{{ $teammeber->member_fax }}</p>
-
-                    </div>
-
-
-                    <div class="inline-block line-height">
-                        <b>Skills:</b>
-                        <p>{{ $teammeber->member_skill }}</p>
-                    </div>
-
-
-                </div>
-
-            </div>
-            <span> Home: </span>
-            <span> Team: </span>
-            <div class="icon pt-2 pb-2">
-                <i class="fa-brands fa fa-twitter" aria-hidden="true"> </i><span> -
-                    {{ $teammeber->twitter_url }}</span><br><br>
-                <i class="fa-brands fa-facebook"></i><span> - {{ $teammeber->facebook_url }}</span><br><br>
-                <i class="fa-brands fa-square-instagram"></i><span> - {{ $teammeber->instagram_url }}</span><br><br>
-            </div>
-            <!-- page-title end -->
-            <!--site-main start-->
-            <div class="site-main pt-2">
-                <p>{{ $teammeber->undefine }}</p>
-
-                <h6 class="headings pt-3">About Me:</h6>
-                <p>{{ $teammeber->about_me }}</p>
-                <h6 class="headings">Qualifications:</h6>
-                <p>{{ $teammeber->qualification }}</p>
-                <h6 class="headings">Achivements:</h6>
-                <p>{{ $teammeber->achivement }}</p>
-            </div>
-        </main>
-    @endforeach
-    </div></div>
-
-
+                </main>
+            @endforeach
+        </div>
+    </div>
 @endsection
-
-
-
