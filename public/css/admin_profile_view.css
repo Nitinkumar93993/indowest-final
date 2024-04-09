@@ -1,0 +1,149 @@
+.profile_view {
+    /* border: 1px solid gray; */
+    width: 29%;
+    height: fit-content;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px darkslategray, inset 0px 0px 10px darkkhaki;
+}
+
+
+.border-div-style {
+    /* border: 2px solid red; */
+    width: 90%;
+    display: ruby;
+    padding: 0 1rem;
+}
+
+#image-border {
+    /* border: 1px solid green; */
+    width: 30%;
+    padding: 10px;
+    background-color: whitesmoke;
+    border-radius: 50%;
+}
+
+#three-dot-span {
+    float: right;
+    line-height: 2px;
+    /* border: 1px solid green; */
+    padding: 0 6px 6px;
+    /* background-color: darkslategray; */
+    margin-top: 0;
+
+}
+
+#three-dot-span span {
+    color: darkslategray;
+    margin: 0px;
+    padding: 1px;
+    background-color: darkslategray;
+    font-size: 5px;
+    /* border-radius: 15px; */
+}
+
+.box-permission-div p {
+    /* background-color: aliceblue; */
+    margin: 0;
+    padding: 5px;
+    border: 1px solid white;
+    /* color: red; */
+}
+
+.image-images-style {
+    border: 1px solid darkslategrey;
+    /* padding: 0 3.5%; */
+    width: 10%;
+    text-align: center;
+}
+
+.image-images-style img {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 100%;
+    margin: 5% 10% 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+#dropdowndiv {
+    position: relative;
+    color: red;
+    z-index: 200;
+    display: none;
+    background-color: darkslategray;
+    margin-top: -3px;
+    border: 1px solid darkslategray;
+}
+
+#dropdowndiv button {
+    background-color: darkslategray;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    color: white;
+    /* border:1px solid gray; */
+}
+
+.box-permission-div {
+    border: 1px solid gray;
+    width: 5rem;
+    height: 6rem;
+    position: relative;
+    z-index: 500;
+    float: right;
+    text-align: center;
+    /* background-color: darkslategrey; */
+}
+
+#threeDotDiv {
+    /* display: none; */
+}
+
+.delete_btn_style {
+    border: none;
+    background-color: transparent;
+    /* color:red */
+}
+
+/* event manage */
+.container-event {
+    /* border: 2px solid blue; */
+    margin: 3rem auto;
+    width: 60%;
+}
+
+/* event manage end */
+/* create course */
+.input-cc {
+    border: 1px solid gray;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0 1rem;
+}
+
+.heading_cc {
+    text-align: center;
+    margin: 2rem 0;
+    background-color: beige;
+    padding: 1rem;
+}
+
+.label_cc {
+
+    font-weight: 500;
+    color: gray;
+}
+
+.btn_cc {
+    background-color: lightseagreen;
+    color: white;
+    width: 100%;
+    padding: 1rem 0;
+    border: none;
+}
+
+/* create course end */
