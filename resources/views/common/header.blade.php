@@ -9,66 +9,81 @@
     <meta name="description" content="Indo-West" />
     <meta name="author" content="https://www.cymolthemes.com/" />
     <meta name="viewport" content=" width=device-width, initial-scale=1, maximum-scale=1" />
-    <title>IELTS, PTE, French Institute in Ambala city and cantt</title>
+    <title>189 INVITATION ROUND</title>
 
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="{{asset('images/favicon.png')}}" />
+    <link rel="shortcut icon" href="{{ asset('images/favicon.png') }}" />
 
     <!-- bootstrap -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/bootstrap.min.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/bootstrap.min.css') }}" />
 
     <!-- animate -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/animate.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/animate.css') }}" />
 
     <!-- fontawesome -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/font-awesome.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/font-awesome.css') }}" />
 
     <!-- themify -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/themify-icons.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/themify-icons.css') }}" />
 
     <!-- flaticon -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/flaticon.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/flaticon.css') }}" />
 
     <!-- slick -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/slick.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/slick.css') }}">
 
     <!-- prettyphoto -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/prettyPhoto.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/prettyPhoto.css') }}">
 
     <!-- shortcodes -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/shortcodes.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/shortcodes.css') }}" />
 
     <!-- main -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/main.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/main.css') }}" />
 
     <!-- main -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/megamenu.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/megamenu.css') }}" />
 
     <!-- responsive -->
-    <link rel="stylesheet" type="text/css" href="{{asset('/css/responsive.css')}}" />
+    <link rel="stylesheet" type="text/css" href="{{ asset('/css/responsive.css') }}" />
 
     {{-- alert css for frontent --}}
     <link rel="stylesheet" href="{{ asset('css/alert-front.css.css') }}">
-    <link rel="stylesheet" href="{{asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css')}}">
+    <link rel="stylesheet"
+        href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css') }}">
 
-    <link rel="stylesheet" href="{{asset('https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css')}}">
+    <link rel="stylesheet"
+        href="{{ asset('https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/css/intlTelInput.min.css') }}">
 
-    <script src="{{asset('/js/jquery.min.js')}}"></script>
-    <script src="{{asset('/js/tether.min.js')}}"></script>
-    <script src="{{asset('/js/bootstrap.min.js')}}"></script>
-    <script src="{{asset('/js/jquery.easing.js')}}"></script>
-    <script src="{{asset('/js/jquery-waypoints.js')}}"></script>
-    <script src="{{asset('/js/jquery-validate.js')}}"></script>
-    <script src="{{asset('/js/jquery.prettyPhoto.js')}}"></script>
-    <script src="{{asset('/js/slick.min.js')}}"></script>
-    <script src="{{asset('/js/numinate.min.js')}}"></script>
-    <script src="{{asset('/js/imagesloaded.min.js')}}"></script>
-    <script src="{{asset('/js/jquery-isotope.js')}}"></script>
-    <script src="js/main.js"></script>
-    <script src="{{asset('/js/modal.js')}}"></script>
+    <script src="{{ asset('/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('/js/tether.min.js') }}"></script>
+    <script src="{{ asset('/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/js/jquery.easing.js') }}"></script>
+    <script src="{{ asset('/js/jquery-waypoints.js') }}"></script>
+    <script src="{{ asset('/js/jquery-validate.js') }}"></script>
+    <script src="{{ asset('/js/jquery.prettyPhoto.js') }}"></script>
+    <script src="{{ asset('/js/slick.min.js') }}"></script>
+    <script src="{{ asset('/js/numinate.min.js') }}"></script>
+    <script src="{{ asset('/js/imagesloaded.min.js') }}"></script>
+    <script src="{{ asset('/js/jquery-isotope.js') }}"></script>
+    <script src="{{ asset('/js/main.js') }}"></script>
+    <script src="{{ asset('/js/modal.js') }}"></script>
 
-    <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/intlTelInput.min.js')}}"></script>
-    <script src="{{asset('https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.12/js/utils.min.js')}}"></script>
+    <style type="text/css">
+        #instafeed-container a img {
+            width: 100%;
+            border: 2px solid gray;
+            height: 100%;
+            margin: auto;
+        }
+
+        #instafeed-container {
+            width: 100%;
+            height: 25rem;
+            padding: 0 5%;
+            display: flex;
+        }
+    </style>
 
 </head>
 
@@ -108,15 +123,24 @@
             <nav class="top-bar social-topnav">
                 <div class="top-bar-left nav-desktop">
                     <ul class="menu">
-                        <li class="linkedin-icon"><a target="_blank" href="https://www.instagram.com/indoweststudyandimmigration"><i class="fa-brands fa-instagram"></i></a>
+                        <li class="linkedin-icon"><a target="_blank"
+                                href="https://www.instagram.com/indoweststudyandimmigration"><i
+                                    class="fa-brands fa-instagram"></i></a>
                         </li>
-                        <li class="google-icon"><a target="_blank" href="https://www.youtube.com/channel/UC8v_0zOOJpC3msbpO9PMhHQ"><i class="fa-brands fa-youtube"></i></a>
+                        <li class="google-icon"><a target="_blank"
+                                href="https://www.youtube.com/channel/UC8v_0zOOJpC3msbpO9PMhHQ"><i
+                                    class="fa-brands fa-youtube"></i></a>
                         </li>
-                        <li class="twitter-icon"><a target="_blank" href="https://twitter.com/Indo-Westacademy?lang=en"><i class="fa-brands fa-twitter"></i></a>
+                        <li class="twitter-icon"><a target="_blank"
+                                href="https://twitter.com/Indo-Westacademy?lang=en"><i
+                                    class="fa-brands fa-twitter"></i></a>
                         </li>
-                        <li class="facebook-icon"><a target="_blank" href="https://www.facebook.com/IndoWestAmbala"><i class="fa-brands fa-facebook"></i></a>
+                        <li class="facebook-icon"><a target="_blank" href="https://www.facebook.com/IndoWestAmbala"><i
+                                    class="fa-brands fa-facebook"></i></a>
                         </li>
-                        <li class="instagram-icon"><a target="_blank" href="https://www.linkedin.com/company/Indo-Weststudyandimmigrationpvtltd/?originalSubdomain=in"><i class="fa-brands fa-linkedin"></i></a>
+                        <li class="instagram-icon"><a target="_blank"
+                                href="https://www.linkedin.com/company/Indo-Weststudyandimmigrationpvtltd/?originalSubdomain=in"><i
+                                    class="fa-brands fa-linkedin"></i></a>
                         </li>
                     </ul>
                 </div>
@@ -140,12 +164,13 @@
                 <div class="top-bar-right nav-desktop">
                     <ul class="menu menu-desktop">
                         <li>
-                            <form id="loginRegisterform">
+                            <form action="{{ url('/') }}/login" method="post" id="loginRegisterform">
+                                @csrf
                                 <div id="loginregistermodal">
                                     <div class="modal-content-2">
                                         <div class="d-flex justify-content-between">
-                                            <h5 class="login-main-heading">
-                                                Login/Register
+                                            <h5 class="feedback-heading text-left">
+                                                Login
                                             </h5>
                                             <button class="bnd" id="closeLogin">&times;</button>
                                         </div>
@@ -154,7 +179,8 @@
                                                 <div class="col-sm-12 loginformsec">
                                                     <label class="label-heading-modal" for="countryCode">Login
                                                         By</label>
-                                                    <select class="select-branch-head" id="mySelect">
+                                                    <select name="loginType" class="select-branch-head"
+                                                        id="mySelect">
                                                         <option value="canumber" selected="selected">
                                                             Phone Number
                                                         </option>
@@ -166,30 +192,29 @@
                                                 <div class="col-sm-12 loginformsec" id="thirdchapter">
                                                     <label class="label-heading-modal" for="phoneNumber">Phone
                                                         Number</label>
-                                                    <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Your Phone Number" required>
+                                                    <input type="tel" id="phoneNumber" name="phoneNumber"
+                                                        placeholder="Enter Your Phone Number">
                                                 </div>
                                                 <div class="col-sm-12 loginformsec" id="secondchapter">
                                                     <label class="label-heading-modal" for="Email">Email</label>
-                                                    <input type="email" id="Email" name="Email" placeholder="Enter Your Email" required>
+                                                    <input type="email" id="Email" name="userEmail"
+                                                        placeholder="Enter Your Email">
                                                 </div>
                                                 <div class="col-sm-12 loginformsec" id="newchapter">
                                                     <label class="label-heading-modal" for="Unique ID">Unique
                                                         ID</label>
-                                                    <input type="text" id="Unique" name="Unique ID" placeholder="Enter Your Unique ID" required>
+                                                    <input type="text" id="Unique" name="UniqueID"
+                                                        placeholder="Enter Your Unique ID">
                                                 </div>
                                                 <div class="col-sm-12 loginformsec">
                                                     <label class="label-heading-modal" for="password">Password</label>
-                                                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+                                                    <input type="password" id="password" name="password"
+                                                        placeholder="Enter your password" required>
                                                 </div>
-                                                <div class="col-sm-6">
+                                                <div class="col-sm-12">
                                                     <div class="">
                                                         <h5><a class="forgetpassword" href="">Forgot
                                                                 Password?</a></h5>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6 text-right">
-                                                    <div class="">
-                                                        <h5><a class="forgetpassword" href="#" onclick="openRegister()">Create an Account</a></h5>
                                                     </div>
                                                 </div>
                                                 <div class=" col-lg-12 d-flex justify-content-end">
@@ -201,7 +226,9 @@
                                 </div>
                             </form>
                             <!-- register modal start -->
-                            <form id="RegisterAlgform"> <!--id want to be change change-->
+                            <form id="RegisterAlgform" method="POST" action="{{ url('/') }}/dashboard">
+                                @csrf
+                                <!--id want to be change change-->
                                 <div id="loginregistermodal">
                                     <div class="modal-content-2">
                                         <div class="d-flex justify-content-between">
@@ -217,92 +244,101 @@
                                                         <div class="col-sm-12 REGISTERformsec">
                                                             <label class="label-heading-modal" for="phoneNumber">Phone
                                                                 Number</label>
-                                                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Your Phone Number" required>
+                                                            <input type="number" id="phoneNumber" name="phoneNumber"
+                                                                placeholder="Enter Your Phone Number" required>
                                                         </div>
 
                                                         <div class="col-lg-12 d-flex justify-content-end">
-                                                            <input class="submit-modal" type="submit" value="Submit" onclick="openRegistrationForm()">
+                                                            <button class="submit-modal"
+                                                                onclick="openRegistrationForm()"> Submit </button>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div id="registrationForm" style="display: none;">
-                                                    <form>
-                                                        <div class="row">
-                                                            <!-- Add fields for registration -->
-                                                            <div class="col-sm-6 REGISTERformsec">
-                                                                <label class="label-heading-modal" for="firstName">First
-                                                                    Name</label>
-                                                                <input type="text" id="phoneNumber" name="firstName" placeholder="Enter Your first Name" required>
-                                                            </div>
-                                                            <div class="col-sm-6 REGISTERformsec">
-                                                                <label class="label-heading-modal" for="lastName">Last
-                                                                    Name</label>
-                                                                <input type="text" id="phoneNumber" name="lastName" placeholder="Enter Your last Name" required>
-                                                            </div>
-                                                            <div class="col-sm-6 REGISTERformsec">
-                                                                <label class="label-heading-modal" for="email">Email</label>
-                                                                <input type="email" id="phoneNumber" name="email" placeholder="Enter Your email" required>
-                                                            </div>
-                                                            <div class="col-sm-6 REGISTERformsec">
-                                                                <label class="label-heading-modal" for="dob">Date
-                                                                    of
-                                                                    Birth</label>
-                                                                <input type="date" id="phoneNumber" name="dob" placeholder="Enter Your dob" required>
-                                                            </div>
 
-                                                            <div class="col-sm-12 REGISTERformsec">
-                                                                <label class="label-heading-modal" for="option">How
-                                                                    did
-                                                                    you hear about us?</label>
-                                                                <select class="form-select simple" aria-label="Default select example" required>
-                                                                    <option selected> Select</option>
-                                                                    <option value="1">Advertising Van</option>
-                                                                    <option value="2">cable/FM</option>
-                                                                    <option value="3">Direct visit</option>
-                                                                    <option value="4">Friends
-                                                                    </option>
-                                                                    <option value="5">Google
-                                                                    </option>
-                                                                    <option value="6">Internet</option>
-                                                                    <option value="7">Linkedin</option>
-                                                                    <option value="8">News Paper
-                                                                    </option>
-                                                                    <option value="9">Pamphlets</option>
-                                                                    <option value="10">Relatives</option>
-                                                                    <option value="11">School Seminar</option>
-                                                                    <option value="12">Social Media</option>
-                                                                    <option value="12">TV Show</option>
-                                                                    <option value="12">Twitter</option>
-                                                                    <option value="12">Wall Painting</option>
-                                                                    <option value="12">Website</option>
-                                                                    <option value="12">Whatsapp</option>
-                                                                    <option value="12">YouTube</option>
-                                                                    <option value="12">Just dial</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="col-sm-6 REGISTERformsec">
-                                                                <label class="label-heading-modal" for="City">City</label>
-                                                                <input type="text" id="phoneNumber" name="City" placeholder="Enter Your City" required>
-                                                            </div>
-                                                            <div class="col-sm-6 REGISTERformsec">
-                                                                <label class="label-heading-modal" for="option">Interested Services</label>
-                                                                <select class="form-select simple" aria-label="Default select example" required>
-                                                                    <option selected>Select Interested Services</option>
-                                                                    <option value="1">Test Coaching & Preparation
-                                                                    </option>
-                                                                    <option value="2">Visa Services</option>
-                                                                    <option value="3">Reality Test</option>
-                                                                    <option value="4">Exam Booking
-                                                                    </option>
-                                                                    <option value="5">Events
-                                                                    </option>
-                                                                </select>
-                                                            </div>
-                                                            <div class=" col-lg-12 d-flex justify-content-end">
-                                                                <input class="submit-modal" type="submit" value="Submit">
-                                                            </div>
+                                                    <div class="row">
+                                                        <!-- Add fields for registration -->
+                                                        <div class="col-sm-6 REGISTERformsec">
+                                                            <input type="text" id="phoneNumber" name="firstName"
+                                                                placeholder="Enter Your first Name" required>
                                                         </div>
-                                                    </form>
+                                                        <div class="col-sm-6 REGISTERformsec">
+                                                            <input type="text" id="phoneNumber" name="lastName"
+                                                                placeholder="Enter Your last Name" required>
+                                                        </div>
+                                                        <div class="col-sm-6 REGISTERformsec">
+                                                            <input type="email" id="phoneNumber" name="useremail"
+                                                                placeholder="Enter Your email" required>
+                                                        </div>
+                                                        <div class="col-sm-6 REGISTERformsec">
+                                                            <input type="date" id="phoneNumber" name="userdob"
+                                                                placeholder="Enter Your dob" required>
+                                                        </div>
+
+                                                        <div class="col-sm-12 REGISTERformsec">
+                                                            <select name="referance_platform"
+                                                                class="form-select simple"
+                                                                aria-label="Default select example" required>
+                                                                <option selected> How did you hear about us? </option>
+                                                                <option value="Advertising_Van">Advertising Van
+                                                                </option>
+                                                                <option value="cable/FM">cable/FM</option>
+                                                                <option value="Direct_visit">Direct visit</option>
+                                                                <option value="Friends">Friends
+                                                                </option>
+                                                                <option value="Google">Google
+                                                                </option>
+                                                                <option value="Internet">Internet</option>
+                                                                <option value="Linkedin">Linkedin</option>
+                                                                <option value="News_Paper">News Paper
+                                                                </option>
+                                                                <option value="Pamphlets">Pamphlets</option>
+                                                                <option value="Relatives">Relatives</option>
+                                                                <option value="School_Seminar">School Seminar</option>
+                                                                <option value="Social_Media">Social Media</option>
+                                                                <option value="TV_Show">TV Show</option>
+                                                                <option value="Twitter">Twitter</option>
+                                                                <option value="Wall_Painting">Wall Painting</option>
+                                                                <option value="Website">Website</option>
+                                                                <option value="Whatsapp">Whatsapp</option>
+                                                                <option value="YouTube">YouTube</option>
+                                                                <option value="Just_dial">Just dial</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-6 REGISTERformsec">
+                                                            <input type="text" id="phoneNumber" name="userCity"
+                                                                placeholder="Enter Your City" required>
+                                                        </div>
+                                                        <div class="col-sm-6 REGISTERformsec">
+                                                            <select name="Interested_Services"
+                                                                class="form-select simple"
+                                                                aria-label="Default select example" required>
+                                                                <option selected>Select Interested Services</option>
+                                                                <option value="Test_Coaching_&_Preparation">Test
+                                                                    Coaching & Preparation
+                                                                </option>
+                                                                <option value="Visa_Services">Visa Services</option>
+                                                                <option value="Reality_Test">Reality Test</option>
+                                                                <option value="Exam_Booking">Exam Booking
+                                                                </option>
+                                                                <option value="Events">Events
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-sm-6 REGISTERformsec">
+                                                            <input type="password" id="phoneNumber" name="password"
+                                                                placeholder="Password" required>
+                                                        </div>
+                                                        <div class="col-sm-6 REGISTERformsec">
+                                                            <input type="password" id="phoneNumber"
+                                                                name="confirmPassword" placeholder="Confirm Password"
+                                                                required>
+                                                        </div>
+                                                        <div class=" col-lg-12 d-flex justify-content-end">
+                                                            <button class="submit-modal" type="submit"> Submit
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
@@ -325,11 +361,13 @@
                         <div class="row">
                             <div class="col-lg-12">
                                 <!--site-navigation -->
-                                <div class="site-navigation d-flex flex-row align-items-center justify-content-between">
+                                <div
+                                    class="site-navigation d-flex flex-row align-items-center justify-content-between">
                                     <!-- site-branding -->
                                     <div class="site-branding">
-                                        <a class="home-link" href="/index" title="Indo-West" rel="home">
-                                            <img id="logo-img" class="img-center" src="images/cropped-2.png" alt="logo-img">
+                                        <a class="home-link" href="/" title="Indo-West" rel="home">
+                                            <img id="logo-img" class="img-center" src="images/cropped-2.png"
+                                                alt="logo-img">
                                         </a>
                                     </div><!-- site-branding end -->
                                     <!-- widget-info -->
@@ -346,20 +384,24 @@
                                         <nav class="main-menu menu-mobile" id="menu">
                                             <ul class="menu">
                                                 <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-link" id="text-color-menu">About</a>
+                                                    <a href="#" class="mega-menu-link"
+                                                        id="text-color-menu">About</a>
                                                     <ul style="height: 304px;" class="mega-submenu">
                                                         <li class="mega-menu-item">
                                                             <a href="/about-us">
-                                                                <img src="/images/slides/1.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;
+                                                                <img src="/images/slides/1.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;
                                                                 About Us
                                                             </a>
                                                         </li>
                                                         <li><a href="/contact-us">
-                                                                <img src="/images/slides/2.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Contact
+                                                                <img src="/images/slides/2.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Contact
                                                                 Us</a></li>
                                                         <li class="mega-menu-item">
-                                                            <a href>
-                                                                <img src="/images/slides/3.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Our
+                                                            <a href="/our-branch-ambala-cantt">
+                                                                <img src="/images/slides/3.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Our
                                                                 Branches
                                                             </a>
                                                             <ul class="mega-submenu">
@@ -371,7 +413,8 @@
                                                         </li>
                                                         <li class="mega-menu-item">
                                                             <a href="#">
-                                                                <img src="/images/slides/4.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;International
+                                                                <img src="/images/slides/4.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;International
                                                                 Offices</a>
                                                             <ul class="mega-submenu" id="international-Offices">
                                                                 <li><a href="/MELBOURNE">MELBOURNE</a></li>
@@ -382,30 +425,38 @@
                                                         </li>
                                                         <li class="mega-menu-item">
                                                             <a href="#">
-                                                                <img src="/images/slides/5.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Social
+                                                                <img src="/images/slides/5.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Social
                                                                 Media</a>
                                                             <ul class="mega-submenu" id="social-media">
-                                                                <li><a href="https://www.facebook.com/IndoWestAmbala">Facebook</a>
+                                                                <li><a
+                                                                        href="https://www.facebook.com/IndoWestAmbala">Facebook</a>
                                                                 </li>
-                                                                <li><a href="https://www.instagram.com/indoweststudyandimmigration">Instagram</a>
+                                                                <li><a
+                                                                        href="https://www.instagram.com/indoweststudyandimmigration">Instagram</a>
                                                                 </li>
-                                                                <li><a href="https://twitter.com/Indo-Westacademy?lang=en">Twitter</a>
+                                                                <li><a
+                                                                        href="https://twitter.com/Indo-Westacademy?lang=en">Twitter</a>
                                                                 </li>
-                                                                <li><a href="https://www.youtube.com/channel/UC8v_0zOOJpC3msbpO9PMhHQ">Youtube</a>
+                                                                <li><a
+                                                                        href="https://www.youtube.com/channel/UC8v_0zOOJpC3msbpO9PMhHQ">Youtube</a>
                                                                 </li>
-                                                                <li><a href="https://www.linkedin.com/company/Indo-Weststudyandimmigrationpvtltd/?originalSubdomain=in">Linkedin</a>
+                                                                <li><a
+                                                                        href="https://www.linkedin.com/company/Indo-Weststudyandimmigrationpvtltd/?originalSubdomain=in">Linkedin</a>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li class="mega-menu-item active">
-                                                    <a href="#" class="mega-menu-link" id="text-color-menu">Study
+                                                    <a href="#" class="mega-menu-link"
+                                                        id="text-color-menu">Study
                                                         Abroad</a>
                                                     <ul style="height: 60px;" class="mega-submenu">
                                                         <li class="mega-menu-item">
                                                             <a href="/studyvisa" class="mega-menufont">
-                                                                <img src="/images/slides/6.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;
+                                                                <img src="/images/slides/6.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;
                                                                 Study Visa
                                                             </a>
                                                             <ul class="mega-submenu" id="study-visa">
@@ -457,29 +508,34 @@
                                                     </ul>
                                                 </li>
                                                 <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-link" id="text-color-menu">Academic
+                                                    <a href="#" class="mega-menu-link"
+                                                        id="text-color-menu">Academic
                                                         Testing</a>
                                                     <ul style="height: 120px;" class="mega-submenu">
                                                         <li>
                                                             <a href="/about-reality-test">
-                                                                <img src="/images/slides/7.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;
+                                                                <img src="/images/slides/7.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;
                                                                 About
                                                                 Reality Test
                                                             </a>
                                                         </li>
                                                         <li><a href="/book-reality-test">
-                                                                <img src="/images/slides/8.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Book
+                                                                <img src="/images/slides/8.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Book
                                                                 Reality
                                                                 Test</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="mega-menu-item active">
-                                                    <a href="#" class="mega-menu-link" id="text-color-menu">Travel
+                                                    <a href="#" class="mega-menu-link"
+                                                        id="text-color-menu">Travel
                                                         Abroad</a>
                                                     <ul style="height: 60px;" class="mega-submenu">
                                                         <li class="mega-menu-item">
                                                             <a href="/visitor-visa" class="mega-menufont">
-                                                                <img src="/images/slides/9.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;
+                                                                <img src="/images/slides/9.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;
                                                                 Visitor Visa
                                                             </a>
                                                             <ul class="mega-submenu" id="visitor-visa">
@@ -500,12 +556,14 @@
                                                     </ul>
                                                 </li>
                                                 <li class="mega-menu-item active">
-                                                    <a href="#" class="mega-menu-link" id="text-color-menu">Settle
+                                                    <a href="#" class="mega-menu-link"
+                                                        id="text-color-menu">Settle
                                                         Abroad</a>
                                                     <ul style="height: 304px;" class="mega-submenu mega-submenu-left">
                                                         <li class="mega-menu-item">
                                                             <a href="/work-visa" class="mega-menufont">
-                                                                <img src="/images/slides/10.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Work
+                                                                <img src="/images/slides/10.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Work
                                                                 Visa
                                                             </a>
                                                             <ul class="mega-submenu" id="work-visa">
@@ -516,7 +574,8 @@
                                                         </li>
                                                         <li class="mega-menu-item">
                                                             <a href="/dependent-visa" class="mega-menufont">
-                                                                <img src="/images/slides/11.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Dependent
+                                                                <img src="/images/slides/11.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Dependent
                                                                 Visa
                                                             </a>
                                                             <ul class="mega-submenu" id="dependent-visa">
@@ -534,7 +593,8 @@
                                                         </li>
                                                         <li class="mega-menu-item">
                                                             <a href="/spouse-visa" class="mega-menufont">
-                                                                <img src="/images/slides/12.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Spouse
+                                                                <img src="/images/slides/12.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Spouse
                                                                 Visa
                                                             </a>
                                                             <ul class="mega-submenu" id="spouse-visa">
@@ -551,7 +611,8 @@
                                                         </li>
                                                         <li class="mega-menu-item">
                                                             <a href="/permanent-resi" class="mega-menufont">
-                                                                <img src="/images/slides/13.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Permanent
+                                                                <img src="/images/slides/13.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Permanent
                                                                 Residency
                                                             </a>
                                                             <ul class="mega-submenu" id="permanent-visa">
@@ -563,12 +624,15 @@
                                                         </li>
                                                         <li class="mega-menu-item">
                                                             <a href class="mega-menufont">
-                                                                <img src="/images/slides/14.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Migration
+                                                                <img src="/images/slides/14.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Migration
                                                             </a>
                                                             <ul class="mega-submenu" id="migrationnewdrop">
                                                                 <li class="mega-menu-item">
-                                                                    <a href="" class="mega-menufont">
-                                                                        <img src="/images/slides/29.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;
+                                                                    <a href="/Indo-west.ca" class="mega-menufont">
+                                                                        <img src="/images/slides/29.png"
+                                                                            width="30px" height="30px"
+                                                                            alt>&nbsp;&nbsp;&nbsp;
                                                                         Canada
                                                                     </a>
                                                                     <ul class="mega-submenu" id="canada">
@@ -606,11 +670,13 @@
                                                                     </ul>
                                                                 </li>
                                                                 <li class="mega-menu-item">
-                                                                    <a href="" class="mega-menufont">
-                                                                        <img src="/images/slides/28.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Australia
+                                                                    <a href="/Indo-west.ca" class="mega-menufont">
+                                                                        <img src="/images/slides/28.png"
+                                                                            width="30px" height="30px"
+                                                                            alt>&nbsp;&nbsp;&nbsp;Australia
                                                                     </a>
                                                                     <ul class="mega-submenu" id="Australia">
-                                                                        <li><a href="/189-Invitation-Round">189
+                                                                        <li><a href="/Invitation-Round">189
                                                                                 Invitation
                                                                                 Round</a>
                                                                         </li>
@@ -636,7 +702,8 @@
                                                                         <li><a href="/Partner-VISA">Partner
                                                                                 VISA</a>
                                                                         </li>
-                                                                        <li><a href="/FAMILY-SPOUSAL-SPONSORSHIP-(AUS)">FAMILY
+                                                                        <li><a
+                                                                                href="/FAMILY-SPOUSAL-SPONSORSHIP-(AUS)">FAMILY
                                                                                 /
                                                                                 SPOUSAL
                                                                                 SPONSORSHIP</a></li>
@@ -656,168 +723,219 @@
                                                     </ul>
                                                 </li>
                                                 <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-link" id="text-color-menu">Coaching</a>
+                                                    <a href="#" class="mega-menu-link"
+                                                        id="text-color-menu">Coaching</a>
                                                     <ul style="height: 304px;" class="mega-submenu">
                                                         <li class="mega-menu-item">
                                                             <a href="/about-our-courses" class="mega-menufont">
-                                                                <img src="/images/slides/15.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;
+                                                                <img src="/images/slides/15.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;
                                                                 About Our
                                                                 Courses
                                                             </a>
                                                             <ul class="mega-submenu" id="about-our-courses">
-                                                                <!-- <li><a href="/about-our-courses-CAEL">CAEL</a></li> -->
+                                                                <li><a href="/about-our-courses-CAEL">CAEL</a></li>
                                                                 <li><a href="/about-our-courses-CD-IELTS">CD-IELTS</a>
                                                                 </li>
-                                                                <!-- <li><a href="/about-our-courses-CELPIP">CELPIP</a>
-                                                                </li> -->
+                                                                <li><a href="/about-our-courses-CELPIP">CELPIP</a>
+                                                                </li>
                                                                 <li><a href="/about-our-courses-DUOLINGO">DUOLINGO</a>
                                                                 </li>
-                                                                <li><a href="/about-our-courses-French">GT-IELTS</a>
+                                                                <li><a href="/about-our-courses-French">French</a>
                                                                 </li>
-                                                                <!-- <li><a href="/about-our-courses-German">German</a>
-                                                                </li> -->
+                                                                <li><a href="/about-our-courses-German">German</a>
+                                                                </li>
                                                                 <li><a href="/about-our-courses-IELTS">IELTS</a>
                                                                 </li>
-                                                                <!-- <li><a href="/about-our-courses-OET">OET</a></li> -->
+                                                                <li><a href="/about-our-courses-OET">OET</a></li>
                                                                 <li><a href="/about-our-courses-PTE">PTE</a></li>
-                                                                <li><a href="/about-our-courses-Spanish">PTE CORE</a>
+                                                                <li><a href="/about-our-courses-Spanish">Spanish</a>
                                                                 </li>
-                                                                <li><a href="/about-our-courses-Spoken-English">PTE UKVI
-                                                                    </a></li>
-                                                                <!-- <li><a
-                                                                        href="/about-our-courses-DUOLINGO">DUOLINGO</a>
-                                                                </li> -->
-                                                                <li><a href="/about-our-courses-UKVI-IELTS">IELTS UKVI
-                                                                    </a></li>
+                                                                <li><a href="/about-our-courses-Spoken-English">Spoken
+                                                                        English</a></li>
+                                                                <li><a href="/about-our-courses-DUOLINGO">DUOLINGO</a>
+                                                                </li>
+                                                                <li><a href="/about-our-courses-UKVI-IELTS">UKVI
+                                                                        IELTS</a></li>
                                                             </ul>
                                                         </li>
                                                         <li><a href="/inhouse-courses">
-                                                                <img src="/images/slides/16.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Offline
+                                                                <img src="/images/slides/16.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Inhouse
                                                                 Courses</a></li>
                                                         <li><a href="/online-coaching">
-                                                                <img src="/images/slides/17.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Online
+                                                                <img src="/images/slides/17.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Online
                                                                 Coaching</a></li>
-                                                        <!-- <li><a href="/practic-packs">
-                                                                <img src="/images/slides/18.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Practice
-                                                                Packs</a></li> -->
+                                                        <li><a href="/practic-packs">
+                                                                <img src="/images/slides/18.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Practice
+                                                                Packs</a></li>
                                                         <li><a href="/exam-booking">
-                                                                <img src="/images/slides/19.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Exam
+                                                                <img src="/images/slides/19.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Exam
                                                                 Booking</a></li>
                                                     </ul>
                                                 </li>
                                                 <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-link" id="text-color-menu">Resources</a>
+                                                    <a href="#" class="mega-menu-link"
+                                                        id="text-color-menu">Resources</a>
                                                     <ul style="height: 546px;" class="mega-submenu">
                                                         <li>
                                                             <a href="/posts-article">
-                                                                <img src="/images/slides/20.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;
+                                                                <img src="/images/slides/20.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;
                                                                 Articles
                                                             </a>
                                                         </li>
                                                         <li><a href="/test-prep-materials">
-                                                                <img src="/images/slides/21.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Test
+                                                                <img src="/images/slides/21.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Test
                                                                 Prep
                                                                 Material</a></li>
                                                         <li><a href="/news-article">
-                                                                <img src="/images/slides/22.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Latest
+                                                                <img src="/images/slides/22.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Latest
                                                                 News &
                                                                 Updates</a></li>
                                                         <li><a href="/study-visa-eliglibity">
-                                                                <img src="/images/slides/23.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Study
+                                                                <img src="/images/slides/23.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Study
                                                                 Visa
                                                                 Eligibility</a></li>
                                                         <li><a href="/English-Language-Assessment">
-                                                                <img src="/images/slides/24.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;English
+                                                                <img src="/images/slides/24.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;English
                                                                 Language
                                                                 Assessment</a></li>
                                                         <li><a href="/CRS-Calculator">
-                                                                <img src="/images/slides/25.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;CRS
+                                                                <img src="/images/slides/25.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;CRS
                                                                 Calculator</a></li>
                                                         <li><a href="/Score-Converter">
-                                                                <img src="/images/slides/26.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Score
+                                                                <img src="/images/slides/26.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Score
                                                                 Converter</a></li>
                                                         <li>
                                                             <a href="/events">
-                                                                <img src="/images/slides/27.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Events</a>
+                                                                <img src="/images/slides/27.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Events</a>
                                                         </li>
                                                         <li class="mega-menu-item">
                                                             <a href class="mega-menufont">
-                                                                <img src="/images/slides/36.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Others
+                                                                <img src="/images/slides/36.png" width="30px"
+                                                                    height="30px" alt>&nbsp;&nbsp;&nbsp;Others
                                                             </a>
-                                                            <ul style="height: 533px;" class="mega-submenu" id="othersresources">
+                                                            <ul style="height: 533px;" class="mega-submenu"
+                                                                id="othersresources">
                                                                 <li>
                                                                     <a href="/web-media-gallery">
-                                                                        <img src="/images/slides/30.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;
+                                                                        <img src="/images/slides/30.png"
+                                                                            width="30px" height="30px"
+                                                                            alt>&nbsp;&nbsp;&nbsp;
                                                                         Gallery
                                                                     </a>
                                                                 </li>
                                                                 <li><a href="/testimonials">
-                                                                        <img src="/images/slides/31.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Testimonials</a>
+                                                                        <img src="/images/slides/31.png"
+                                                                            width="30px" height="30px"
+                                                                            alt>&nbsp;&nbsp;&nbsp;Testimonials</a>
                                                                 </li>
                                                                 <li><a href="/faq">
-                                                                        <img src="/images/slides/32.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;FAQs</a>
+                                                                        <img src="/images/slides/32.png"
+                                                                            width="30px" height="30px"
+                                                                            alt>&nbsp;&nbsp;&nbsp;FAQs</a>
                                                                 </li>
                                                                 <li><a href="/term-condition">
-                                                                        <img src="/images/slides/33.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Terms
+                                                                        <img src="/images/slides/33.png"
+                                                                            width="30px" height="30px"
+                                                                            alt>&nbsp;&nbsp;&nbsp;Terms
                                                                         &amp;
                                                                         Conditions</a></li>
                                                                 <li>
-                                                                    <a class="modal-chat" onclick="openModal()" href="/Complaint-page">
-                                                                        <img src="/images/slides/34.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Complaint
+                                                                    <a class="modal-chat" onclick="openModal()">
+                                                                        <img src="/images/slides/34.png"
+                                                                            width="30px" height="30px"
+                                                                            alt>&nbsp;&nbsp;&nbsp;Complaint
                                                                     </a>
-                                                                    <!-- <div id="alterHang">
-                                                                
+                                                                    <div id="alterHang">
+                                                                        <!--id want to be change change-->
                                                                         <div id="modal">
                                                                             <div class="modal-content-2">
-                                                                                <div class="d-flex justify-content-between">
-                                                                                    <h5 class="feedback-heading text-left">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between">
+                                                                                    <h5
+                                                                                        class="feedback-heading text-left">
                                                                                         Complaint
                                                                                     </h5>
-                                                                                    <button class="bnd" id="closeBtn">&times;</button>
+                                                                                    <button class="bnd"
+                                                                                        id="closeBtn">&times;</button>
                                                                                 </div>
                                                                                 <div class="container">
                                                                                     <div class="row">
                                                                                         <br>
                                                                                         <div class="col-sm-6">
-                                                                                            <label class="label-heading-modal" for="phoneNumber">Phone
+                                                                                            <label
+                                                                                                class="label-heading-modal"
+                                                                                                for="phoneNumber">Phone
                                                                                                 Number</label>
-                                                                                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Your Phone Number" required>
+                                                                                            <input type="tel"
+                                                                                                id="phoneNumber"
+                                                                                                name="phoneNumber"
+                                                                                                placeholder="Enter Your Phone Number"
+                                                                                                required>
                                                                                         </div>
                                                                                         <br>
-                                                                                        <div class=" col-lg-12 d-flex justify-content-end">
-                                                                                            <input class="submit-modal" type="submit" value="Submit">
+                                                                                        <div
+                                                                                            class=" col-lg-12 d-flex justify-content-end">
+                                                                                            <input class="submit-modal"
+                                                                                                type="submit"
+                                                                                                value="Submit">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                    </div> -->
+                                                                    </div>
                                                                 </li>
                                                                 <li>
-                                                                    <a class="modal-chat" id="openModalBtn" href="/feedback-page">
-                                                                        <img src="/images/slides/35.png" width="30px" height="30px" alt>&nbsp;&nbsp;&nbsp;Feedback</a>
-                                                                    <!-- <div id="myModal" class="modal">
+                                                                    <a class="modal-chat" id="openModalBtn">
+                                                                        <img src="/images/slides/35.png"
+                                                                            width="30px" height="30px"
+                                                                            alt>&nbsp;&nbsp;&nbsp;Feedback</a>
+                                                                    <div id="myModal" class="modal">
                                                                         <div class="modal-content">
                                                                             <form id="myForm">
-                                                                                <div class="d-flex justify-content-between">
-                                                                                    <h5 class="feedback-heading text-left">
+                                                                                <div
+                                                                                    class="d-flex justify-content-between">
+                                                                                    <h5
+                                                                                        class="feedback-heading text-left">
                                                                                         Feedback
                                                                                     </h5>
-                                                                                    <button class="bnd" id="closeModalBtn">&times;
+                                                                                    <button class="bnd"
+                                                                                        id="closeModalBtn">&times;
                                                                                     </button>
                                                                                 </div>
                                                                                 <div class="container">
                                                                                     <div class="row">
                                                                                         <div class="col-sm-6">
-                                                                                            <label class="label-heading-modal" for="countryCode">Feedback
+                                                                                            <label
+                                                                                                class="label-heading-modal"
+                                                                                                for="countryCode">Feedback
                                                                                                 Type</label>
-                                                                                            <select class="basic simple">
+                                                                                            <select
+                                                                                                class="basic simple">
 
-                                                                                                <option class="select-branch-head" value="ca" selected="selected">
+                                                                                                <option
+                                                                                                    class="select-branch-head"
+                                                                                                    value="ca"
+                                                                                                    selected="selected">
                                                                                                     Internal
                                                                                                     Feedback
                                                                                                 </option>
-                                                                                                <option class="select-branch-head" value="me">
+                                                                                                <option
+                                                                                                    class="select-branch-head"
+                                                                                                    value="me">
                                                                                                     Google
                                                                                                     Feedback
                                                                                                 </option>
@@ -826,19 +944,28 @@
                                                                                         </div>
                                                                                         <br>
                                                                                         <div class="col-sm-6">
-                                                                                            <label class="label-heading-modal" for="phoneNumber">Phone
+                                                                                            <label
+                                                                                                class="label-heading-modal"
+                                                                                                for="phoneNumber">Phone
                                                                                                 Number</label>
-                                                                                            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Enter Your Phone Number" required>
+                                                                                            <input type="tel"
+                                                                                                id="phoneNumber"
+                                                                                                name="phoneNumber"
+                                                                                                placeholder="Enter Your Phone Number"
+                                                                                                required>
                                                                                         </div>
                                                                                         <br>
-                                                                                        <div class=" col-lg-12 d-flex justify-content-end">
-                                                                                            <input class="submit-modal" type="submit" value="Submit">
+                                                                                        <div
+                                                                                            class=" col-lg-12 d-flex justify-content-end">
+                                                                                            <input class="submit-modal"
+                                                                                                type="submit"
+                                                                                                value="Submit">
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
                                                                             </form>
                                                                         </div>
-                                                                    </div> -->
+                                                                    </div>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -850,7 +977,8 @@
                                     <!-- header_extra -->
                                     <div class="header_extra d-flex flex-row align-items-center justify-content-end">
                                         <div class="header_btn mr-20">
-                                            <a class="cmt-btn cmt-btn-size-md cmt-btn-shape-round" id="become-a-member-1" href="/contact-experts">Contact
+                                            <a class="cmt-btn cmt-btn-size-md cmt-btn-shape-round"
+                                                id="become-a-member-1" href="/contact-experts">Contact
                                                 Experts</a>
                                         </div>
                                     </div><!-- header_extra end-->

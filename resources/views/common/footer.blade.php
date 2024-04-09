@@ -83,7 +83,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="blog-single.html"><img src="images/blog/b_thumbb-02.jpg"
+                                        <a href="/blog-single"><img src="images/blog/b_thumbb-02.jpg"
                                                 alt="post-img"></a>
                                         <div class="post-detail">
                                             <span class="post-date"><i class="fa fa-calendar"></i>Apr
@@ -95,7 +95,7 @@
                                         </div>
                                     </li>
                                     <li>
-                                        <a href="blog-single.html"><img src="images/blog/b_thumbb-03.jpg"
+                                        <a href="/blog-single"><img src="images/blog/b_thumbb-03.jpg"
                                                 alt="post-img"></a>
                                         <div class="post-detail">
                                             <span class="post-date"><i class="fa fa-calendar"></i>Apr
